@@ -1,9 +1,12 @@
 :root{
-    --boxColor: #3C3C3C;
-    --backgroundColor: #222222;
-    --textColor: #EEEEEE;
-    --borderColor: #888888;
+    --boxColor: #7F8CAA;
+    --backgroundColor: #333446;
+    --textColor: #EAEFEF;
+    --borderColor: #B8CFCE;
 
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body, html {
     height: 100%;
@@ -20,7 +23,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 12px;
     position: fixed;
     top: 0;
     background-color: var(--backgroundColor);
@@ -66,18 +69,17 @@ nav a:hover {
     color: var(--textColor);
 }
 #careers{
-    margin-bottom: 350px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-#careerTrees{
+#careerInfoContent{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
 }
 .careerPaths{
     display: flex;
@@ -101,35 +103,17 @@ footer{
     background-color: var(--boxColor);
     padding: 20px;
     border-radius: 6px;
-    border: 1px solid var(--borderColor);
+    border: 3px solid var(--borderColor);
     width: 200px;
 }
 .careerImg1{
-    transition: transform 0.3s ease;
-    border: 1px solid var(--borderColor);
-}
-.careerImg1:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--borderColor);
 }
 .careerImg2{
-    transition: transform 0.3s ease;
-    border: 1px solid var(--borderColor);
-}
-.careerImg2:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--borderColor);
 }
 .careerImg3{
-    transition: transform 0.3s ease;
-    border: 1px solid var(--borderColor);
-}
-.careerImg3:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--borderColor);
 }
 #careerContainer{
     display: flex;
@@ -143,8 +127,10 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--borderColor);
+    border: 3px solid var(--borderColor);
     padding: 20px;
+    background-color: var(--boxColor);
+    border-radius: 6px;
 }
 #fullstackContent{
     display: flex;
@@ -160,8 +146,10 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--borderColor);
+    border: 3px solid var(--borderColor);
     padding: 20px;
+    background-color: var(--boxColor);
+    border-radius: 6px;
 }
 #networkArch > p{
     text-indent: 50px;
@@ -172,13 +160,24 @@ footer{
     gap: 20px;
     width: 750px;
 }
+table{
+    background-color: var(--backgroundColor);
+    border: 3px solid var(--borderColor);
+    height: 200px;
+    border-radius: 6px;
+}
+#networkArch > img {
+    justify-content: flex-end
+}
 #MLE{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--borderColor);
+    border: 3px solid var(--borderColor);
     padding: 20px;
+    background-color: var(--boxColor);
+    border-radius: 6px;
 }
 #MLEContent{
     display: flex;
@@ -191,11 +190,11 @@ footer{
 }
 section {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateX(30px);
   transition: all 0.8s ease-out;
 }
 section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
